@@ -17,24 +17,12 @@ const Header = () => {
             <h1 className="text-xl font-bold text-foreground">MindWell</h1>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#inicio" className="text-foreground hover:text-primary transition-colors font-medium">
-              Início
-            </a>
-            <a href="#artigos" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Artigos
-            </a>
-            <a href="#meditacoes" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Meditações
-            </a>
-            <a href="#terapeutas" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Terapeutas
-            </a>
-            <Button variant="outline" size="sm">
-              Login
+          {/* CTA Button */}
+          <div className="hidden md:flex">
+            <Button variant="hero" size="default">
+              Agendar Sessão
             </Button>
-          </nav>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -45,45 +33,13 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile CTA */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-border bg-card">
-            <div className="flex flex-col space-y-4">
-              <a 
-                href="#inicio" 
-                className="text-foreground hover:text-primary transition-colors font-medium px-2 py-1"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Início
-              </a>
-              <a 
-                href="#artigos" 
-                className="text-muted-foreground hover:text-primary transition-colors font-medium px-2 py-1"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Artigos
-              </a>
-              <a 
-                href="#meditacoes" 
-                className="text-muted-foreground hover:text-primary transition-colors font-medium px-2 py-1"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Meditações
-              </a>
-              <a 
-                href="#terapeutas" 
-                className="text-muted-foreground hover:text-primary transition-colors font-medium px-2 py-1"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Terapeutas
-              </a>
-              <div className="pt-2">
-                <Button variant="outline" size="sm" className="w-full">
-                  Login
-                </Button>
-              </div>
-            </div>
-          </nav>
+          <div className="md:hidden py-4 border-t border-border bg-card">
+            <Button variant="hero" size="default" className="w-full mx-6">
+              Agendar Sessão
+            </Button>
+          </div>
         )}
       </div>
     </header>

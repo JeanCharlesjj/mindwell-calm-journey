@@ -5,22 +5,22 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Ana Silva",
-      role: "Estudante de Psicologia",
-      content: "O MindWell transformou minha rotina diária. As meditações guiadas me ajudam a começar o dia com mais clareza e os artigos são incrivelmente informativos.",
+      role: "Executiva",
+      content: "Consegui encontrar uma psicóloga especializada em ansiedade que me entende completamente. As sessões online são super práticas e já sinto uma diferença enorme.",
       rating: 5,
       avatar: "AS"
     },
     {
       name: "Carlos Mendes",
-      role: "Profissional de TI",
-      content: "Encontrei o terapeuta perfeito através da plataforma. O processo foi simples e o suporte é excepcional. Recomendo para todos que buscam cuidar da saúde mental.",
+      role: "Estudante",
+      content: "A flexibilidade de horários salvou minha vida acadêmica. Posso fazer terapia entre as aulas, e meu psicólogo é incrível. Recomendo a todos!",
       rating: 5,
       avatar: "CM"
     },
     {
       name: "Maria Santos",
-      role: "Professora",
-      content: "Como educadora, valorizo conteúdo de qualidade. O MindWell oferece artigos baseados em evidências que me ajudam tanto pessoalmente quanto profissionalmente.",
+      role: "Mãe e Professora",
+      content: "Como mãe, é difícil encontrar tempo para cuidar de mim. O MindWell me permitiu ter sessões de casa, sem prejudicar minha rotina com os filhos.",
       rating: 5,
       avatar: "MS"
     }
@@ -38,8 +38,8 @@ const TestimonialsSection = () => {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Histórias reais de pessoas que encontraram equilíbrio e bem-estar 
-            através do MindWell.
+            Histórias reais de pessoas que transformaram suas vidas 
+            com terapia online através do MindWell.
           </p>
         </div>
 
